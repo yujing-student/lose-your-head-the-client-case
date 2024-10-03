@@ -1,0 +1,106 @@
+@font-face {
+  font-family: Archivo;
+  src: url(/font/Archivo-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+  font-family: Archivo Italic;
+  src: url(/font/Archivo-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Archivo", sans-serif;
+}
+
+:root {
+  --black: #222226;
+  --grey: #666666;
+  --white: #fff;
+  --blue: #364bf7;
+}
+
+h1 {
+  font-size: 6rem;
+  letter-spacing: -2px;
+  line-height: 6rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 4rem;
+  letter-spacing: -2px;
+  line-height: 4rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 3rem;
+  letter-spacing: -2px;
+  line-height: 3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: normal;
+}
+
+h5 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.12rem;
+  line-height: 2rem;
+}
+
+.subtext {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.25px;
+}
+
+@media (max-width: 35em) {
+  h1 {
+    font-size: 3rem;
+    line-height: 100%;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  h5 {
+    font-size: 1.12rem;
+    line-height: 2rem;
+  }
+
+  h6 {
+    font-size: 1.12rem;
+    line-height: 2rem;
+  }
+}
