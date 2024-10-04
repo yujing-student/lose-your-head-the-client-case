@@ -4,9 +4,6 @@
     console.log($page.status)
 </script>
 <section>
-    <h1>Er gaat iets mis zie onderstaande error?</h1>
-    <p>{$page.status} - {$page.error.message}
-    </p>
     <a href="/#">
         <svg class="flip-arrow"
              width="16"
@@ -31,12 +28,17 @@
         </svg>
         terug naar home
     </a>
+    <h1>Er gaat iets mis zie onderstaande error?</h1>
+    <p>{$page.status} - {$page.error.message}
+    </p>
+
 </section>
 
 
 <style>
     section {
         padding: 2rem;
+        display: flex;justify-content: center;flex-direction: column;align-items: center;
         /*    padding zodat de tekst niet teveel tegen de kant aan staat*/
 
         line-height: 1.5;
@@ -45,10 +47,9 @@
     @media (max-width: 35em){
         h1{
             font-size: 1.5rem;
+
         }
-        section{
-            width: 20rem;
-        }
+
     }
 
     @media (min-width: 35em){
@@ -62,6 +63,13 @@
         color: var(--black);
         text-decoration: none;
         text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+    a:hover{
+        border: 1px solid var(--blue);
+    }
+    a:active {
+        border: 1px solid var(--blue);
     }
 
     p {
