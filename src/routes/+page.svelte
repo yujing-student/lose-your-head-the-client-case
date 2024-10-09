@@ -1,17 +1,8 @@
 <script>
-    export let data;
-    import Header from "$lib/Header.svelte";
+  import Header from "../lib/Header.svelte";
 </script>
 
-<Header/>
-<h1>This is H1</h1>
-<h2>This is H2</h2>
-<h3>This is H3</h3>
-<h4>This is H4</h4>
-<h5>This is H5</h5>
-<h6>This is H6</h6>
-<p>data.datafsrgs{data.width}</p>
-<p>This is a paragraph</p>
-<p class="subtext">This is subtext.</p>
+<Header />
 
-<a href="/members">member pagina</a>
+<main>
+</main>

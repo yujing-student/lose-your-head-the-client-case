@@ -1,8 +1,13 @@
 <script>
     import {page} from '$app/stores'
+    import Header from "../lib/Header.svelte";
+
 
     console.log($page.status)
 </script>
+
+<Header />
+
 <section>
     <a href="/#">
         <svg class="flip-arrow"
@@ -49,11 +54,7 @@
     @media (max-width: 35em) {
         h1 {
             font-size: 1.5rem; /*letters worden anders te groot*/
-
-
-
         }
-
     }
 
     @media (min-width: 35em) {
@@ -74,11 +75,12 @@
     }
 
     a:hover {
-        border: 1px solid var(--blue);
+        color: var(--blue);
     }
 
-    a:active {
-        border: 1px solid var(--blue);
+    a:hover svg path {
+        stroke: var(--blue);
+
     }
 
     p {

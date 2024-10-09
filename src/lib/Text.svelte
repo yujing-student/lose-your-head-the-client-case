@@ -14,9 +14,4 @@
 <!--More text elements if needed-->
 
 <style>
-    div{
-        display: flex;
-        justify-content: center;
-    }
-
 </style>
